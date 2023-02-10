@@ -1,0 +1,37 @@
+.form-section {
+  min-height: 80vh;
+  @include flex(center, center, row);
+  margin-top: 3rem;
+  flex-wrap: wrap;
+  form {
+    padding: 3rem 10rem;
+    box-shadow: 0px 10px 10px rgba($color: #000000, $alpha: 0.2),
+      0px 20px 40px rgba($color: #000000, $alpha: 0.2);
+    @include flex(center, center, column);
+    border-radius: 2rem;
+    border: 2px solid rgb(214, 205, 205);
+    input,
+    textarea {
+      width: 40rem;
+      margin: 2rem;
+      font-size: 2rem;
+      &:focus {
+        outline: 3px solid rgb(8, 8, 8);
+      }
+    }
+    textarea {
+      font-size: 2rem;
+    }
+    button {
+      width: 50%;
+      padding: 2rem;
+      margin-top: 3rem;
+      background: $background-color;
+      color: white;
+      border-radius: 10px;
+      &:focus {
+        background: rgb(118, 131, 245);
+      }
+    }
+  }
+}
